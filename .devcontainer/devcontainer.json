@@ -1,0 +1,11 @@
+{ 
+    "name": "PHP API",
+    //Manejar el empaquetado del software y el compose es que el que dirige  
+    "dockerComposeFile" : "../docker-compose.yml", 
+    //Todos los servicios van a estar enfocados en esta app  
+    "service" : "app", 
+    //Para trabajar en nuestro codespace 
+    "workspaceFolder" : "/workspaces/backend-php-clase", 
+    //Puerto en que vamos a trabajar 
+    "forwardPorts" : [8000] 
+} 
