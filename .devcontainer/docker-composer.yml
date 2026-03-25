@@ -22,6 +22,17 @@ services:
       MSQL_DATABASE: Clase
         
     ports: 
-      - "3306:3306"    
+      - "3306:3306" 
+
+    phpmyadmin: 
+      image: phpmyadmin/phpmyadmin 
+      ports:
+        - "8080:80" 
+
+      enviroment: 
+        PMA_HOST: db  
+        MSQL_ROOT_PASSWORD: root  
+      depends_on:
+        - db     
 
  
